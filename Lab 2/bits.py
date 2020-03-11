@@ -21,6 +21,21 @@ def load_numbers(file_name):
 number_list_x = 'lab2-x.txt'
 number_list_y = 'lab2-y.txt'
 
+def find_sum():
+    sum = 0
+    max_number = 0
+    x = load_numbers(number_list_x)
+    y = load_numbers(number_list_y)
+    i = 0
+    while (i < len(x)):
+        sum += float(x[i]) * float(y[i])
+        i += 1
+        if (abs(sum) > max_number):
+            max_number = sum
+    return max_number
+    
+print(find_sum())
+
 def find_min_bits(number_list):
     min_bits = 0
     min_dec_bits = 0
@@ -48,7 +63,7 @@ def to_binary(dec_bits, file, number_list):
         bin_number = '{0:010b}'.format(int(float_number))
         if ("-" in bin_number):
             bin_number = twos_complement(bin_number)
-        file.write(bin_number + " ")
+        file.write(bin_number + "\n")
     file.close()
     
 def twos_complement(number):
