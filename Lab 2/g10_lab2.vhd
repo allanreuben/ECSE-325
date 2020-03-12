@@ -24,7 +24,7 @@ begin
 	begin
 		if (rst = '1') then
 			tempMac <= "00000000000000000000000";
-			ready <= '0';
+			tempReady <= '0';
 		elsif (rising_edge(clk)) then
 			tempMac <= tempMac + signed(x) * signed(y);
 			i = i + 1;
