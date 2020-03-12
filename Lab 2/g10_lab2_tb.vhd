@@ -47,7 +47,6 @@ begin -- Instantiate MAC
  mac => mac_out,
  ready => ready_out
  );
-
 -----------------------------------------------------------------------------
 -- Clock Generation
 -----------------------------------------------------------------------------
@@ -62,7 +61,7 @@ end process clk_generation;
 -----------------------------------------------------------------------------
 -- Providing Inputs
 -----------------------------------------------------------------------------
-feeding_instr : process is
+feeding_instr : process
  variable v_Iline1 : line;
  variable v_Iline2 : line;
  variable v_Oline : line;

@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Mar 11 12:21:42 2020
+Analysis & Synthesis Status : Successful - Thu Mar 12 16:54:04 2020
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : g10_lab2
 Top-level Entity Name : g10_lab2
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 24
+Total registers : 56
 Total pins : 56
 Total virtual pins : 0
 Total block memory bits : 0

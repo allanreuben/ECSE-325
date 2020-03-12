@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Mar 11 12:22:23 2020
+Fitter Status : Successful - Thu Mar 12 16:54:43 2020
 Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 Revision Name : g10_lab2
 Top-level Entity Name : g10_lab2
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 13 / 32,070 ( < 1 % )
-Total registers : 24
+Logic utilization (in ALMs) : 35 / 32,070 ( < 1 % )
+Total registers : 56
 Total pins : 56 / 457 ( 12 % )
 Total virtual pins : 0
 Total block memory bits : 0 / 4,065,280 ( 0 % )

@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/altera/15.1
 Eg10_lab2
-Z0 w1583943689
+Z0 w1584043153
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -22,9 +22,9 @@ VB?D_Ja31l9^IeBHG;oTd10
 !s100 <Hb5MTOJY41SM2HKnGi?]3
 Z7 OV;C;10.4b;61
 32
-Z8 !s110 1583944310
+Z8 !s110 1584043179
 !i10b 1
-Z9 !s108 1583944310.000000
+Z9 !s108 1584043179.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|P:/ECSE-325/Lab 2/g10_lab2.vhd|
 Z11 !s107 P:/ECSE-325/Lab 2/g10_lab2.vhd|
 !i113 1
@@ -35,10 +35,10 @@ R1
 R2
 R3
 DEx4 work 8 g10_lab2 0 22 B?D_Ja31l9^IeBHG;oTd10
-l20
+l21
 L15
-V8N8h1:W@`F7V9Gml:]=K73
-!s100 bBk?>G8C_l;AUNH9XCSZm1
+VEcQaH?H3<F5Pz4l@RX6i30
+!s100 RIe2Scm]=gLcACNoZ^1Vh2
 R7
 32
 R8
@@ -50,7 +50,7 @@ R11
 R12
 R13
 Eg10_lab2_tb
-Z14 w1583946846
+Z14 w1584039294
 Z15 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R1
 R2
@@ -64,11 +64,11 @@ VDzMR;bd93HmoRmmZHTohe2
 !s100 ik:eOd?H=ffcDY2kSHAoH2
 R7
 32
-Z18 !s110 1583946856
+R8
 !i10b 1
-Z19 !s108 1583946855.000000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|P:/ECSE-325/Lab 2/g10_lab2_tb.vhd|
-Z21 !s107 P:/ECSE-325/Lab 2/g10_lab2_tb.vhd|
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|P:/ECSE-325/Lab 2/g10_lab2_tb.vhd|
+Z19 !s107 P:/ECSE-325/Lab 2/g10_lab2_tb.vhd|
 !i113 1
 R12
 R13
@@ -77,18 +77,18 @@ R15
 R1
 R2
 R3
-Z22 DEx4 work 11 g10_lab2_tb 0 22 DzMR;bd93HmoRmmZHTohe2
+Z20 DEx4 work 11 g10_lab2_tb 0 22 DzMR;bd93HmoRmmZHTohe2
 l39
 L11
-VD;@PAkdRl1c1i8oZnHhS]2
-!s100 Ln8XIn;W^UF;LaGjAZO6^1
+Z21 VD;@PAkdRl1c1i8oZnHhS]2
+Z22 !s100 Ln8XIn;W^UF;LaGjAZO6^1
 R7
 32
-R18
+R8
 !i10b 1
+R9
+R18
 R19
-R20
-R21
 !i113 1
 R12
 R13
