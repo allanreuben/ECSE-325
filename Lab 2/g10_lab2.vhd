@@ -22,20 +22,20 @@ begin
 	
 	process(clk, rst)
 	begin
-		if (rst = '1') then
+		if (rst = '1') then -- If resetting the MAC, then set output to 0
 			tempMac <= "00000000000000000000000";
 			ready <= '0';
 		elsif (rising_edge(clk)) then
-			tempMac <= tempMac + signed(x) * signed(y);
-			i = i + 1;
-			if (i = 1000) then
+			tempMac <= tempMac + signed(x) * signed(y); -- Do the Multiply-accumulate operation
+			i <= i + 1;
+			if (i = 1000) then -- If 1000, then set tempReady to 1 and reset i
 				tempReady <= '1';
-				i = 0;
+				i <= 0;
 			else
 				tempReady <= '0';
 			end if;
 		end if;
-		mac <= std_logic_vector(tempMac);
+		mac <= std_logic_vector(tempMac); -- Once operation is complete, send the 23 bit output to mac
 		ready <= tempReady;
 	end process;
 	
