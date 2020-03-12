@@ -21,18 +21,18 @@ def load_numbers(file_name):
 x_list = load_numbers("lab2-x.txt")
 y_list = load_numbers("lab2-y.txt")
 
-def find_sum():
+def find_sum(list_1, list_2):
     sum = 0
     max_number = 0
     i = 0
-    while (i < len(x_list)):
-        sum += float(x_list[i]) * float(y_list[i])
+    while (i < len(list_1)):
+        sum += float(list_1[i]) * float(list_2[i])
         i += 1
         if (abs(sum) > max_number):
             max_number = sum
     return max_number
     
-print(find_sum())
+print(find_sum(x_list, y_list))
 
 def find_min_bits(number_list):
     min_bits = 0
@@ -100,6 +100,7 @@ for i in range(5):
     for j in range(i * 200, 200 + i * 200):
         x_batch.append(x_list[j])
         y_batch.append(y_list[j])
+    print(find_sum(x_batch, y_batch))
     print("~~~Batch " + str(i + 1) + " X list~~~")
     min_bits_x = find_min_bits(x_batch)
     print("~~~Batch " + str(i + 1) + " Y list~~~")
