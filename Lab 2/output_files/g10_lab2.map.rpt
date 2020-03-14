@@ -1,5 +1,5 @@
 Analysis & Synthesis report for g10_lab2
-Thu Mar 12 16:54:04 2020
+Fri Mar 13 22:52:08 2020
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Mar 12 16:54:04 2020       ;
+; Analysis & Synthesis Status     ; Successful - Fri Mar 13 22:52:08 2020       ;
 ; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
 ; Revision Name                   ; g10_lab2                                    ;
 ; Top-level Entity Name           ; g10_lab2                                    ;
@@ -182,14 +182,14 @@ agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 34        ;
+; Estimate of Logic utilization (ALMs needed) ; 35        ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 62        ;
+; Combinational ALUT usage for logic          ; 64        ;
 ;     -- 7 input functions                    ; 0         ;
-;     -- 6 input functions                    ; 6         ;
-;     -- 5 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 5         ;
+;     -- 5 input functions                    ; 4         ;
 ;     -- 4 input functions                    ; 0         ;
-;     -- <=3 input functions                  ; 56        ;
+;     -- <=3 input functions                  ; 55        ;
 ;                                             ;           ;
 ; Dedicated logic registers                   ; 56        ;
 ;                                             ;           ;
@@ -199,8 +199,8 @@ agreement for further details.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 56        ;
-; Total fan-out                               ; 469       ;
-; Average fan-out                             ; 2.03      ;
+; Total fan-out                               ; 481       ;
+; Average fan-out                             ; 2.06      ;
 +---------------------------------------------+-----------+
 
 
@@ -209,7 +209,7 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |g10_lab2                  ; 62 (62)             ; 56 (56)                   ; 0                 ; 1          ; 56   ; 0            ; |g10_lab2           ; g10_lab2    ; work         ;
+; |g10_lab2                  ; 64 (64)             ; 56 (56)                   ; 0                 ; 1          ; 56   ; 0            ; |g10_lab2           ; g10_lab2    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -234,9 +234,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Total registers                              ; 56    ;
 ; Number of registers using Synchronous Clear  ; 32    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 23    ;
+; Number of registers using Asynchronous Clear ; 24    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 33    ;
+; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -247,21 +247,20 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; arriav_ff             ; 56                          ;
-;     CLR               ; 23                          ;
-;     ENA               ; 1                           ;
+;     CLR               ; 24                          ;
 ;     ENA SCLR          ; 32                          ;
-; arriav_lcell_comb     ; 62                          ;
+; arriav_lcell_comb     ; 64                          ;
 ;     arith             ; 55                          ;
 ;         1 data inputs ; 32                          ;
 ;         2 data inputs ; 23                          ;
-;     normal            ; 7                           ;
-;         2 data inputs ; 1                           ;
-;         6 data inputs ; 6                           ;
+;     normal            ; 9                           ;
+;         5 data inputs ; 4                           ;
+;         6 data inputs ; 5                           ;
 ; arriav_mac            ; 1                           ;
 ; boundary_port         ; 56                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 2.45                        ;
+; Average LUT depth     ; 2.51                        ;
 +-----------------------+-----------------------------+
 
 
@@ -280,7 +279,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Thu Mar 12 16:53:52 2020
+    Info: Processing started: Fri Mar 13 22:51:42 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off g10_lab2 -c g10_lab2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -293,26 +292,15 @@ Warning (10492): VHDL Process Statement warning at g10_lab2.vhd(39): signal "tem
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "N[0]" File: P:/ECSE-325/Lab 2/g10_lab2.vhd Line: 8
-    Warning (15610): No output dependent on input pin "N[1]" File: P:/ECSE-325/Lab 2/g10_lab2.vhd Line: 8
-    Warning (15610): No output dependent on input pin "N[2]" File: P:/ECSE-325/Lab 2/g10_lab2.vhd Line: 8
-    Warning (15610): No output dependent on input pin "N[3]" File: P:/ECSE-325/Lab 2/g10_lab2.vhd Line: 8
-    Warning (15610): No output dependent on input pin "N[4]" File: P:/ECSE-325/Lab 2/g10_lab2.vhd Line: 8
-    Warning (15610): No output dependent on input pin "N[5]" File: P:/ECSE-325/Lab 2/g10_lab2.vhd Line: 8
-    Warning (15610): No output dependent on input pin "N[6]" File: P:/ECSE-325/Lab 2/g10_lab2.vhd Line: 8
-    Warning (15610): No output dependent on input pin "N[7]" File: P:/ECSE-325/Lab 2/g10_lab2.vhd Line: 8
-    Warning (15610): No output dependent on input pin "N[8]" File: P:/ECSE-325/Lab 2/g10_lab2.vhd Line: 8
-    Warning (15610): No output dependent on input pin "N[9]" File: P:/ECSE-325/Lab 2/g10_lab2.vhd Line: 8
-Info (21057): Implemented 120 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 122 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 32 input pins
     Info (21059): Implemented 24 output pins
-    Info (21061): Implemented 63 logic cells
+    Info (21061): Implemented 65 logic cells
     Info (21062): Implemented 1 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4908 megabytes
-    Info: Processing ended: Thu Mar 12 16:54:04 2020
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:16
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4899 megabytes
+    Info: Processing ended: Fri Mar 13 22:52:08 2020
+    Info: Elapsed time: 00:00:26
+    Info: Total CPU time (on all processors): 00:00:18
 
 
