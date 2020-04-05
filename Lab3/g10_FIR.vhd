@@ -48,6 +48,16 @@ begin
 	temp_weights(24) := "0000001001110010";
 	return temp_weights;
 end function init_weights;
+
+function round (input : signed(31 downto 0)) return signed(16 downto 0) is
+variable rounded : signed(16 downto 0);
+begin
+	rounded := input(31 downto 15);
+	if (input(14) = '1') then
+		rounded := rounded + 1;
+	end if;
+	return rounded;
+end function round;
 	
 signal r_weights : t_weights;
 signal r_pipeline : t_pipeline := (others => (others => '0'));
@@ -67,7 +77,7 @@ begin
 		elsif (rising_edge(clk)) then
 			r_pipeline <= x & r_pipeline(0 to taps - 2);
 			for i in 0 to taps - 1 loop
-				sum_result := sum_result + resize(r_products(i), 17);
+				sum_result := sum_result + round(r_products(i));
 			end loop;
 			y <= std_logic_vector(sum_result);
 		end if;
