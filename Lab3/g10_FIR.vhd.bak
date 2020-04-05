@@ -55,7 +55,11 @@ variable rounded : signed(16 downto 0);
 begin
 	rounded := input(31 downto 15);
 	if (input(14) = '1') then
-		rounded := rounded + 1;
+		if (input(0) = '0') then
+			rounded := rounded + 1;
+		else
+			rounded := rounded - 1;
+		end if;
 	end if;
 	return rounded;
 end function round;
@@ -69,23 +73,24 @@ begin
 	r_weights <= init_weights;
 	
 	process (rst, clk)
-	variable sum_result : signed(16 downto 0) := (others => '0');
+	variable sum_result : signed(31 downto 0) := (others => '0');
 
 	begin
 		if (rst = '1') then
 			r_pipeline <= (others => (others => '0'));
-			y <= (others => '0');
+			y <= "00100110010100011";
 		elsif (rising_edge(clk)) then
-			r_pipeline <= x & r_pipeline(0 to taps - 2);
+			r_pipeline <= (x & r_pipeline(0 to taps - 2));
+			sum_result := (others => '0');
 			for i in 0 to taps - 1 loop
 				sum_result := sum_result + r_products(i);
 			end loop;
-			y <= std_logic_vector(sum_result);
+			y <= std_logic_vector(round(sum_result));
 		end if;
 	end process;
 
 	products: for i in 0 to taps - 1 generate
-		r_products(i) <= round(signed(r_pipeline(i)) * r_weights(i));
+		r_products(i) <= (signed(r_pipeline(i)) * r_weights(i));
 	end generate;
 
 end a0;
