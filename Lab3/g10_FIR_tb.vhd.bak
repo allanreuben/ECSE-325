@@ -24,7 +24,7 @@ end component g10_FIR;
 -----------------------------------------------------------------------------
 file file_VECTORS_X : text;
 file file_RESULTS : text;
-constant clk_PERIOD : time := 500 ns;
+constant clk_PERIOD : time := 100 ns;
 signal x_in : std_logic_vector(15 downto 0);
 signal clk_in : std_logic;
 signal rst_in : std_logic;

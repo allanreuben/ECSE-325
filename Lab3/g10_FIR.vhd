@@ -16,7 +16,7 @@ constant taps : integer := 25;
 
 type t_weights is array (0 to taps - 1) of signed(15 downto 0);
 type t_pipeline is array (0 to taps - 1) of std_logic_vector(15 downto 0);
-type t_products is array (0 to taps - 1) of signed(31 downto 0);
+type t_products is array (0 to taps - 1) of signed(16 downto 0);
 
 function init_weights return t_weights is
 variable temp_weights : t_weights;
@@ -78,14 +78,14 @@ begin
 		elsif (rising_edge(clk)) then
 			r_pipeline <= x & r_pipeline(0 to taps - 2);
 			for i in 0 to taps - 1 loop
-				sum_result := sum_result + round(r_products(i));
+				sum_result := sum_result + r_products(i);
 			end loop;
 			y <= std_logic_vector(sum_result);
 		end if;
 	end process;
 
 	products: for i in 0 to taps - 1 generate
-		r_products(i) <= signed(r_pipeline(i)) * r_weights(i);
+		r_products(i) <= round(signed(r_pipeline(i)) * r_weights(i));
 	end generate;
 
 end a0;
