@@ -49,7 +49,8 @@ begin
 	return temp_weights;
 end function init_weights;
 
-function round (input : signed(31 downto 0)) return signed(16 downto 0) is
+function round (input : signed(31 downto 0))
+	return signed is
 variable rounded : signed(16 downto 0);
 begin
 	rounded := input(31 downto 15);
