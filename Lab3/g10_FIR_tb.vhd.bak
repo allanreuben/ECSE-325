@@ -71,9 +71,9 @@ begin -- Instantiate FIR
 			readline(file_VECTORS_X, v_Iline);
 			read(v_Iline, v_x_in);
 			x_in <= v_x_in;
-			wait until rising_edge(clk_in);
 			write(v_Oline, y_out);
 			writeline(file_RESULTS, v_Oline);
+			wait until rising_edge(clk_in);
 		end loop;
 		wait;
 	end process;

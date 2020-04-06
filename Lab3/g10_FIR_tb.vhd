@@ -65,8 +65,8 @@ begin -- Instantiate FIR
 		wait until rising_edge(clk_in);
 		wait until rising_edge(clk_in);
 		rst_in <= '0';
-		file_open(file_VECTORS_X, "P:\ECSE-325\Lab3\lab3-in-fixed-point.txt", read_mode);
-		file_open(file_RESULTS, "P:\ECSE-325\Lab3\lab3-out.txt", write_mode);
+		file_open(file_VECTORS_X, "lab3-in-fixed-point.txt", read_mode);
+		file_open(file_RESULTS, "lab3-out.txt", write_mode);
 		while not endfile(file_VECTORS_X) loop
 			readline(file_VECTORS_X, v_Iline);
 			read(v_Iline, v_x_in);
