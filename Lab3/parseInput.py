@@ -9,7 +9,7 @@ def load_numbers(file_name):
     in_file.close()
     return number_list
     
-def to_binary(dec_bits, total_bits, file, number_list):
+def to_binary(dec_bits, total_bits, file, number_list, round_values):
     file = open("lab3-" + file + "-fixed-point.txt", 'w+') # Create a new file
     for number in number_list:
         # Shift the number the appropriate number of decimal places
@@ -21,6 +21,15 @@ def to_binary(dec_bits, total_bits, file, number_list):
         # If the number is negative, it will not be formatted properly. Needs to be fixed.
         if ("-" in bin_number):
             bin_number = twos_complement(bin_number)
+        # Perform optional rounding
+        if (round_values):
+            bin_number = list(bin_number)
+            last_bit = bin_number[len(bin_number) - 1]
+            if (last_bit == '1'):
+                bin_number = round_up(bin_number)
+            else:
+                bin_number[int(total_bits) - 1] = ''
+            bin_number = "".join(bin_number)
         file.write(bin_number + "\n") # Write the number on a new line in the file
     file.close()
     
@@ -43,6 +52,15 @@ def twos_complement(number):
         i -= 1
     return "".join(number)
 
+def round_up(number):
+    i = len(number) - 1
+    number[i] = ''
+    i -= 1
+    while (number[i] == '1' and i > 0):
+        number[i] = '0'
+        i -= 1
+    number[i] = '1'
+    return number
 
 # ~~~~~~~PROGRAM STARTS HERE~~~~~~~~
 
@@ -50,6 +68,9 @@ def twos_complement(number):
 # Load the two files in as lists
 in_list = load_numbers("lab3-in.txt")
 weights_list = load_numbers("lab3-coef.txt")
-to_binary(15, "16", "in", in_list)
-to_binary(15, "16", "weights", weights_list)
-
+# First, generate truncated lists
+to_binary(15, "16", "truncated-in", in_list, False)
+to_binary(15, "16", "truncated-weights", weights_list, False)
+# Then, generate rounded lists
+to_binary(16, "17", "rounded-in", in_list, True)
+to_binary(16, "17", "rounded-weights", weights_list, True)

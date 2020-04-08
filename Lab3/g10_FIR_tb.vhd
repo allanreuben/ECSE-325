@@ -66,8 +66,8 @@ begin -- Instantiate FIR
 		wait until rising_edge(clk_in);
 		rst_in <= '0';
 		-- Open the input file and create an output file
-		file_open(file_VECTORS_X, "lab3-in-fixed-point.txt", read_mode);
-		file_open(file_RESULTS, "lab3-out.txt", write_mode);
+		file_open(file_VECTORS_X, "lab3-rounded-in-fixed-point.txt", read_mode);
+		file_open(file_RESULTS, "lab3-rounded-out.txt", write_mode);
 		-- Feed data into the design
 		while not endfile(file_VECTORS_X) loop
 			readline(file_VECTORS_X, v_Iline);
