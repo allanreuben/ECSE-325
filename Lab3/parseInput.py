@@ -11,7 +11,7 @@ def load_numbers(file_name):
     number_list = line.split()     # word_list: list of strings
     number_list_float = [float(i) for i in number_list]
     in_file.close()
-    return number_list_float
+    return number_list
 
 def load_numbers_many_lines(file_name):
     in_file = open(file_name, 'r')
@@ -89,7 +89,8 @@ def convert_2com_to_decimal(bin, digit):
 
 # TRYING RMSE
 
-
+to_binary(15, "17", "out-test", "out.txt_scaled.txt")
+to_decimal(15, "17", "out-decimal-test", "lab3-out-test-fixed-point.txt")
 
 print(RMSE(load_numbers("out.txt_scaled.txt"), load_numbers_many_lines("lab3-out-decimal.txt")))
 
@@ -100,6 +101,6 @@ print(RMSE(load_numbers("out.txt_scaled.txt"), load_numbers_many_lines("lab3-out
 
 #print(int("10", base = 2))
 #to_binary(15, "17", "correct", load_numbers("out.txt_scaled.txt"))
-rmse = sqrt(mean_squared_error(load_numbers("out.txt_scaled.txt"), load_numbers_many_lines("lab3-out-decimal.txt")))
+rmse = sqrt(mean_squared_error(load_numbers("out.txt_scaled.txt"), load_numbers_many_lines("lab3-out-decimal-test.txt")))
 print(rmse)
 
