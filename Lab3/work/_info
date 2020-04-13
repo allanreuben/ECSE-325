@@ -9,7 +9,7 @@ z2
 cModel Technology
 dP:/ECSE-325/Lab 2
 Eg10_fir
-Z0 w1586210842
+Z0 w1586367599
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
@@ -17,14 +17,14 @@ Z4 dC:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3
 Z5 8C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/g10_FIR.vhd
 Z6 FC:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/g10_FIR.vhd
 l0
-L5
-VhI33o:@A80eIDkgcjIGOo1
-!s100 QAIg9X<YO6S:c=gMWWaNV1
+L6
+VAea0G=SUKU8Wa2R]SI26T2
+!s100 V1S>^FR5aZmn[[1^RKFKX3
 Z7 OV;C;10.5b;63
 32
-Z8 !s110 1586212270
+Z8 !s110 1586367615
 !i10b 1
-Z9 !s108 1586212270.000000
+Z9 !s108 1586367615.000000
 Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/g10_FIR.vhd|
 Z11 !s107 C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/g10_FIR.vhd|
 !i113 1
@@ -34,11 +34,11 @@ Aa0
 R1
 R2
 R3
-DEx4 work 7 g10_fir 0 22 hI33o:@A80eIDkgcjIGOo1
-l71
-L13
-Vma8LLHZUCgM=;;hnD5z[`3
-!s100 ado00cDVECF;31IPnifJo3
+DEx4 work 7 g10_fir 0 22 Aea0G=SUKU8Wa2R]SI26T2
+l112
+L14
+Vzin8BV0HEhz802[LDMRHF0
+!s100 7jdNUhNQ@aJhG@>3mC0D;1
 R7
 32
 R8
@@ -50,7 +50,7 @@ R11
 R12
 R13
 Eg10_fir_tb
-Z14 w1586212329
+Z14 w1586367609
 Z15 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
 R1
 R2
@@ -64,11 +64,11 @@ Va`3bIQJ^S@GJTK?ohUf2Z0
 !s100 FKLlzP?i@]F:fV9n=3ehP1
 R7
 32
-Z18 !s110 1586212360
+R8
 !i10b 1
-Z19 !s108 1586212360.000000
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/g10_FIR_tb.vhd|
-Z21 !s107 C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/g10_FIR_tb.vhd|
+R9
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/g10_FIR_tb.vhd|
+Z19 !s107 C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/g10_FIR_tb.vhd|
 !i113 1
 R12
 R13
@@ -77,18 +77,18 @@ R15
 R1
 R2
 R3
-Z22 DEx4 work 10 g10_fir_tb 0 22 a`3bIQJ^S@GJTK?ohUf2Z0
+Z20 DEx4 work 10 g10_fir_tb 0 22 a`3bIQJ^S@GJTK?ohUf2Z0
 l33
 L11
-V2U`X2[Y6JMAkl:K;S]<H11
-!s100 3=YKggZ;m4WDmEWP85EZ11
+V=5_7E0hYWcnTBS958A[lU1
+!s100 =?7RNm>EZ^n[ZmLhe<28>2
 R7
 32
-R18
+R8
 !i10b 1
+R9
+R18
 R19
-R20
-R21
 !i113 1
 R12
 R13
