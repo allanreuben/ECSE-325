@@ -108,8 +108,8 @@ def RMSE(number_list_1, number_list_2):
 in_list = load_numbers("lab3-in.txt")
 weights_list = load_numbers("lab3-coef.txt")
 # First, generate truncated lists
-to_binary(11, "12", "truncated-in-13", in_list, False)
-to_binary(11, "12", "truncated-weights-13", weights_list, False)
+to_binary(11, "12", "truncated-in-12", in_list, False)
+to_binary(11, "12", "truncated-weights-12", weights_list, False)
 # Then, generate rounded lists
 #to_binary(16, "17", "rounded-in", in_list, True)
 #to_binary(16, "17", "rounded-weights", weights_list, True)
