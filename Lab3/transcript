@@ -1,0 +1,626 @@
+# Compile of g10_FIR.vhd was successful.
+# Compile of g10_FIR_tb.vhd failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of g10_FIR.vhd was successful.
+# Compile of g10_FIR_tb.vhd failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of g10_FIR.vhd was successful.
+# Compile of g10_FIR_tb.vhd failed with 2 errors.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of g10_FIR.vhd was successful.
+# Compile of g10_FIR_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.g10_fir_tb
+# vsim -gui 
+# Start time: 02:14:45 on Apr 14,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.g10_fir_tb(test)
+# Loading work.g10_fir(a0)
+# ** Fatal: (vsim-3348) Port length (17) does not match actual length (13) for port "/g10_fir_tb/g10_FIR_INST/y".
+#    Time: 0 ps  Iteration: 0  Instance: /g10_fir_tb/g10_FIR_INST File: P:/ECSE-325/Lab3/g10_FIR.vhd Line: 10
+# FATAL ERROR while loading design
+# Error loading design
+# Compile of g10_FIR.vhd was successful.
+# Compile of g10_FIR_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.g10_fir_tb
+# vsim 
+# Start time: 02:17:21 on Apr 14,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.g10_fir_tb(test)
+# Loading work.g10_fir(a0)
+add wave -position end  sim:/g10_fir_tb/x_in
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nzwack  Hostname: 156TR4180-15  ProcessID: 12028
+# 
+#           Attempting to use alternate WLF file "./wlftqzd9fm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftqzd9fm
+# 
+add wave -position end  sim:/g10_fir_tb/y_out
+add wave -position end  sim:/g10_fir_tb/clk_in
+run -all
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 13 (12 downto 0). Right is 17 (16 downto 0).
+#    Time: 300 ns  Iteration: 1  Process: /g10_fir_tb/g10_FIR_INST/line__143 File: P:/ECSE-325/Lab3/g10_FIR.vhd
+# Fatal error in Process line__143 at P:/ECSE-325/Lab3/g10_FIR.vhd line 156
+# 
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+# Break key hit
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+# Break key hit
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+# Break key hit
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+# Break key hit
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+add wave -position end  sim:/g10_fir_tb/g10_FIR_INST/rst
+add wave -position end  sim:/g10_fir_tb/g10_FIR_INST/taps
+add wave -position end  sim:/g10_fir_tb/g10_FIR_INST/r_products
+add wave -position end  sim:/g10_fir_tb/g10_FIR_INST/r_pipeline
+add wave -position end  sim:/g10_fir_tb/g10_FIR_INST/r_weights
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+quit -sim
+vsim -gui work.g10_fir_tb
+# vsim 
+# Start time: 02:20:39 on Apr 14,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.g10_fir_tb(test)
+# Loading work.g10_fir(a0)
+add wave -position end  sim:/g10_fir_tb/clk_in
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nzwack  Hostname: 156TR4180-15  ProcessID: 12028
+# 
+#           Attempting to use alternate WLF file "./wlftkvkrge".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftkvkrge
+# 
+add wave -position end  sim:/g10_fir_tb/x_in
+add wave -position end  sim:/g10_fir_tb/y_out
+run
+# ** Fatal: (vsim-3420) Array lengths do not match. Left is 13 (12 downto 0). Right is 17 (16 downto 0).
+#    Time: 300 ns  Iteration: 1  Process: /g10_fir_tb/g10_FIR_INST/line__143 File: P:/ECSE-325/Lab3/g10_FIR.vhd
+# Fatal error in Process line__143 at P:/ECSE-325/Lab3/g10_FIR.vhd line 156
+# 
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+# Break key hit
+run -all
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run -continue
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+quit -sim
+# Compile of g10_FIR.vhd was successful with warnings.
+# Compile of g10_FIR_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.g10_fir
+# vsim 
+# Start time: 02:33:37 on Apr 14,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.g10_fir(a0)
+add wave -position end  sim:/g10_fir/x
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nzwack  Hostname: 156TR4180-15  ProcessID: 12028
+# 
+#           Attempting to use alternate WLF file "./wlft1g86y1".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft1g86y1
+# 
+add wave -position end  sim:/g10_fir/clk
+add wave -position end  sim:/g10_fir/y
+run
+run
+run
+run
+run -all
+# Break key hit
+quit -sim
+# Compile of g10_FIR.vhd was successful with warnings.
+# Compile of g10_FIR_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+quit -sim
+vsim -gui work.g10_fir_tb
+# vsim 
+# Start time: 02:35:46 on Apr 14,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.g10_fir_tb(test)
+# Loading work.g10_fir(a0)
+add wave -position end  sim:/g10_fir_tb/clk_in
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nzwack  Hostname: 156TR4180-15  ProcessID: 12028
+# 
+#           Attempting to use alternate WLF file "./wlftc4czb1".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftc4czb1
+# 
+add wave -position end  sim:/g10_fir_tb/x_in
+add wave -position end  sim:/g10_fir_tb/y_out
+run -all
+# ** Fatal: (vsim-3476) Formal "input" with array index bounds (23 downto 0) is length 24; actual is length 32.
+#    Time: 300 ns  Iteration: 1  Process: /g10_fir_tb/g10_FIR_INST/line__143 File: P:/ECSE-325/Lab3/g10_FIR.vhd
+# Fatal error in Process line__143 at P:/ECSE-325/Lab3/g10_FIR.vhd line 156
+# 
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+run
+# Cannot continue because of fatal error.
+# HDL call sequence:
+# Stopped at P:/ECSE-325/Lab3/g10_FIR.vhd 156 Process line__143
+# 
+quit -sim
+# Compile of g10_FIR.vhd failed with 1 errors.
+# Compile of g10_FIR_tb.vhd was successful.
+# 2 compiles, 1 failed with 1 error.
+# Compile of g10_FIR.vhd was successful.
+# Compile of g10_FIR_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.g10_fir_tb
+# vsim 
+# Start time: 02:41:43 on Apr 14,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.g10_fir_tb(test)
+# Loading work.g10_fir(a0)
+add wave -position end  sim:/g10_fir_tb/clk_in
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nzwack  Hostname: 156TR4180-15  ProcessID: 12028
+# 
+#           Attempting to use alternate WLF file "./wlfth6mye9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlfth6mye9
+# 
+add wave -position end  sim:/g10_fir_tb/x_in
+add wave -position end  sim:/g10_fir_tb/y_out
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim
+# Compile of g10_FIR.vhd failed with 2 errors.
+# Compile of g10_FIR_tb.vhd was successful.
+# 2 compiles, 1 failed with 2 errors.
+# Compile of g10_FIR.vhd was successful with warnings.
+# Compile of g10_FIR_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.g10_fir_tb
+# vsim 
+# Start time: 03:01:27 on Apr 14,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_textio(body)
+# Loading work.g10_fir_tb(test)
+# Loading work.g10_fir(a0)
+add wave -position end  sim:/g10_fir_tb/clk_in
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: nzwack  Hostname: 156TR4180-15  ProcessID: 12028
+# 
+#           Attempting to use alternate WLF file "./wlft87a9ih".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft87a9ih
+# 
+add wave -position end  sim:/g10_fir_tb/x_in
+add wave -position end  sim:/g10_fir_tb/y_out
+# Compile of g10_FIR.vhd was successful with warnings.
+run -all
+# Break key hit
+# Simulation stop requested.
+quit -sim

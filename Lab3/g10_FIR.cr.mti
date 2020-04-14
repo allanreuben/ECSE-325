@@ -1,0 +1,22 @@
+P:/ECSE-325/Lab3/g10_FIR.vhd {2 {vcom -work work -2002 -explicit -stats=none P:/ECSE-325/Lab3/g10_FIR.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity g10_FIR
+-- Compiling architecture a0 of g10_FIR
+** Warning: [14] P:/ECSE-325/Lab3/g10_FIR.vhd(119): (vcom-1167) Index value 23 (of type ieee.NUMERIC_STD.SIGNED) is out of range 15 downto 0.
+
+
+} {} {}} P:/ECSE-325/Lab3/g10_FIR_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none P:/ECSE-325/Lab3/g10_FIR_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity g10_FIR_tb
+-- Compiling architecture test of g10_FIR_tb
+
+} {} {}}

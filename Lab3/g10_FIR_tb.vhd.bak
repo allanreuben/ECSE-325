@@ -13,10 +13,10 @@ architecture test of g10_FIR_tb is
 -- Declare the Component Under Test
 -----------------------------------------------------------------------------
 component g10_FIR is
- port ( x : in std_logic_vector(15 downto 0);
+ port ( x : in std_logic_vector(11 downto 0);
  clk : in std_logic;
  rst : in std_logic;
- y : out std_logic_vector(16 downto 0)
+ y : out std_logic_vector(12 downto 0)
  );
 end component g10_FIR;
 -----------------------------------------------------------------------------
@@ -25,10 +25,10 @@ end component g10_FIR;
 file file_VECTORS_X : text;
 file file_RESULTS : text;
 constant clk_PERIOD : time := 100 ns;
-signal x_in : std_logic_vector(15 downto 0);
+signal x_in : std_logic_vector(11 downto 0);
 signal clk_in : std_logic;
 signal rst_in : std_logic;
-signal y_out : std_logic_vector(16 downto 0);
+signal y_out : std_logic_vector(12 downto 0);
 
 begin -- Instantiate FIR
 
@@ -57,7 +57,7 @@ begin -- Instantiate FIR
 	
 	variable v_Iline : line;
 	variable v_Oline : line;
-	variable v_x_in : std_logic_vector(15 downto 0);
+	variable v_x_in : std_logic_vector(11 downto 0);
 
 	begin
 		-- Reset the circuit
@@ -66,8 +66,8 @@ begin -- Instantiate FIR
 		wait until rising_edge(clk_in);
 		rst_in <= '0';
 		-- Open the input file and create an output file
-		file_open(file_VECTORS_X, "lab3-truncated-in-fixed-point.txt", read_mode);
-		file_open(file_RESULTS, "lab3-truncated-out.txt", write_mode);
+		file_open(file_VECTORS_X, "lab3-truncated-in-12-fixed-point.txt", read_mode);
+		file_open(file_RESULTS, "lab3-truncated-out-12.txt", write_mode);
 		-- Feed data into the design
 		while not endfile(file_VECTORS_X) loop
 			readline(file_VECTORS_X, v_Iline);
