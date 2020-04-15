@@ -28,81 +28,33 @@ function init_weights
 	return t_weights is
 variable temp_weights : t_weights;
 begin
--- ROUNDED
-	temp_weights(0) := "0000001001110011";
+	temp_weights(0) := "0000001001110010";
 	temp_weights(1) := "0000000000010001";
 	temp_weights(2) := "1111111111010011";
 	temp_weights(3) := "1111111011011110";
-	temp_weights(4) := "0000001100011010";
+	temp_weights(4) := "0000001100011001";
 	temp_weights(5) := "1111110110100111";
 	temp_weights(6) := "1111110000001110";
-	temp_weights(7) := "0000110110111101";
+	temp_weights(7) := "0000110110111100";
 	temp_weights(8) := "1110110001110011";
-	temp_weights(9) := "0000110111111000";
-	temp_weights(10) := "0000001100001000";
+	temp_weights(9) := "0000110111110111";
+	temp_weights(10) := "0000001100000111";
 	temp_weights(11) := "1110101000001010";
-	temp_weights(12) := "0001111000110100";
+	temp_weights(12) := "0001111000110011";
 	temp_weights(13) := "1110101000001010";
-	temp_weights(14) := "0000001100001000";
-	temp_weights(15) := "0000110111111000";
+	temp_weights(14) := "0000001100000111";
+	temp_weights(15) := "0000110111110111";
 	temp_weights(16) := "1110110001110011";
-	temp_weights(17) := "0000110110111101";
+	temp_weights(17) := "0000110110111100";
 	temp_weights(18) := "1111110000001110";
 	temp_weights(19) := "1111110110100111";
-	temp_weights(20) := "0000001100011010";
+	temp_weights(20) := "0000001100011001";
 	temp_weights(21) := "1111111011011110";
 	temp_weights(22) := "1111111111010011";
 	temp_weights(23) := "0000000000010001";
-	temp_weights(24) := "0000001001110011";
-
--- NOT ROUNDED
---	temp_weights(0) := "0000001001110010";
---	temp_weights(1) := "0000000000010001";
---	temp_weights(2) := "1111111111010011";
---	temp_weights(3) := "1111111011011110";
---	temp_weights(4) := "0000001100011001";
---	temp_weights(5) := "1111110110100111";
---	temp_weights(6) := "1111110000001110";
---	temp_weights(7) := "0000110110111100";
---	temp_weights(8) := "1110110001110011";
---	temp_weights(9) := "0000110111110111";
---	temp_weights(10) := "0000001100000111";
---	temp_weights(11) := "1110101000001010";
---	temp_weights(12) := "0001111000110011";
---	temp_weights(13) := "1110101000001010";
---	temp_weights(14) := "0000001100000111";
---	temp_weights(15) := "0000110111110111";
---	temp_weights(16) := "1110110001110011";
---	temp_weights(17) := "0000110110111100";
---	temp_weights(18) := "1111110000001110";
---	temp_weights(19) := "1111110110100111";
---	temp_weights(20) := "0000001100011001";
---	temp_weights(21) := "1111111011011110";
---	temp_weights(22) := "1111111111010011";
---	temp_weights(23) := "0000000000010001";
---	temp_weights(24) := "0000001001110010";
+	temp_weights(24) := "0000001001110010";
 	return temp_weights;
 end function init_weights;
-
--- Rounds a 32-bit input to a 17-bit output value
-function round (input : signed(31 downto 0))
-	return signed is
-variable rounded : signed(16 downto 0); -- The rounded value
-begin
-	-- Copy the 17 most significant bits from the input to the rounded value
-	rounded := input(31 downto 15);
-	-- If the next most significant bit from the input is '1', round up. Otherwise, round down.
-	-- COMMENT THIS SECTION OUT TO GET TRUNCATED RESULTS
-	if (input(14) = '1') then
-		if (input(31) = '0') then -- If number is positive, add 1. If negative, subtract 1.
-			rounded := rounded + 1;
-		else
-			rounded := rounded - 1;
-		end if;
-	end if;
-	-- END OF ROUNDING SECTION
-	return rounded;
-end function round;
 
 -- ARRAYS
 signal r_weights : t_weights;
@@ -127,7 +79,7 @@ begin
 			for i in 0 to taps - 1 loop
 				sum_result := sum_result + r_products(i); -- Sum the products produced by each tap
 			end loop;
-			y <= std_logic_vector(round(sum_result)); -- Round the sum before setting it to the input
+			y <= std_logic_vector(sum_result(31 downto 15)); -- Round the sum before setting it to the input
 		end if;
 	end process;
 

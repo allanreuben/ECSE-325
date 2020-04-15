@@ -1,13 +1,4 @@
-C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/g10_FIR.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/g10_FIR.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity g10_FIR
--- Compiling architecture a0 of g10_FIR
-
-} {} {}} {P:/ECSE-325/Lab 3/g10_FIR.vhd} {1 {vcom -work work -2002 -explicit -stats=none {P:/ECSE-325/Lab 3/g10_FIR.vhd}
+{P:/ECSE-325/Lab 3/g10_FIR.vhd} {1 {vcom -work work -2002 -explicit -stats=none {P:/ECSE-325/Lab 3/g10_FIR.vhd}
 Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -15,16 +6,6 @@ Model Technology ModelSim ALTERA vcom 10.4b Compiler 2015.05 May 27 2015
 -- Loading package NUMERIC_STD
 -- Compiling entity g10_FIR
 -- Compiling architecture a0 of g10_FIR
-
-} {} {}} C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/g10_FIR_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/g10_FIR_tb.vhd
-Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package std_logic_textio
--- Compiling entity g10_FIR_tb
--- Compiling architecture test of g10_FIR_tb
 
 } {} {}} P:/ECSE-325/Lab3/g10_FIR_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none P:/ECSE-325/Lab3/g10_FIR_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
@@ -36,6 +17,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Compiling entity g10_FIR_tb
 -- Compiling architecture test of g10_FIR_tb
 
+} {} {}} C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/FIR_Direct/g10_FIR.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/FIR_Direct/g10_FIR.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity g10_FIR
+-- Compiling architecture a0 of g10_FIR
+
 } {} {}} H:/Lab3/g10_FIR.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Lab3/g10_FIR.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
 -- Loading package STANDARD
@@ -44,6 +34,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  
 -- Loading package NUMERIC_STD
 -- Compiling entity g10_FIR
 -- Compiling architecture a0 of g10_FIR
+
+} {} {}} C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/FIR_Direct/g10_FIR_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Users/nczwa/OneDrive/Documents/University/ecse325/ECSE-325/Lab3/FIR_Direct/g10_FIR_tb.vhd
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Compiling entity g10_FIR_tb
+-- Compiling architecture test of g10_FIR_tb
 
 } {} {}} H:/Lab3/g10_FIR_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none H:/Lab3/g10_FIR_tb.vhd
 Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
