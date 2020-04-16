@@ -15,7 +15,7 @@ end g10_complex_square;
 architecture rtl of g10_complex_square is
 
 signal r_x, r_y	: signed(31 downto 0);
-signal r_xx, r_yy	: signed(63 downto 0);
+signal r_xx, r_yy, r_xy	: signed(63 downto 0);
 
 begin
 
@@ -28,13 +28,15 @@ begin
 			r_y <= (others => '0');
 			r_xx <= (others => '0');
 			r_yy <= (others => '0');
+			r_xy <= (others => '0');
 		elsif(rising_edge(i_clk)) then
 			r_x <= signed(i_x);
 			r_y <= signed(i_y);
 			r_xx <= r_x * r_x;
 			r_yy <= r_y * r_y;
+			r_xy <= r_x * r_y;
 			o_xx <= std_logic_vector(('0' & r_xx) - r_yy);
-			o_yy <= std_logic_vector(r_x * r_y & '0');
+			o_yy <= std_logic_vector(r_xy & '0');
 		end if;
 	end process p_mult;
 	
