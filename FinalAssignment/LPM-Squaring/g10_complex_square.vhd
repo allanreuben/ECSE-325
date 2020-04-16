@@ -34,8 +34,9 @@ component LPM_MULT
 	);
 end component;
 
+signal r_x, r_y : signed(31 downto 0);
 signal r_xx, r_yy, r_xy : std_logic_vector(63 downto 0);
-constant pipeline_value	: integer := 2;
+constant pipeline_value	: integer := 4;
 
 begin
 	
@@ -57,26 +58,27 @@ begin
 	)
 	port map ( DATAA => i_y, DATAB => i_y, CLOCK => i_clk, RESULT => r_yy );
 	
-	mult3 : LPM_MULT generic map (
-		LPM_WIDTHA => 32,
-		LPM_WIDTHB => 32,
-		LPM_WIDTHP => 64,
-		LPM_REPRESENTATION => "SIGNED",
-		LPM_PIPELINE => pipeline_value
-	)
-	port map ( DATAA => i_x, DATAB => i_y, CLOCK => i_clk, RESULT => r_xy );
+--	mult3 : LPM_MULT generic map (
+--		LPM_WIDTHA => 32,
+--		LPM_WIDTHB => 32,
+--		LPM_WIDTHP => 64,
+--		LPM_REPRESENTATION => "SIGNED",
+--		LPM_PIPELINE => pipeline_value
+--	)
+--	port map ( DATAA => i_x, DATAB => i_y, CLOCK => i_clk, RESULT => r_xy );
 	
 	p_mult : process(i_clk,i_rstb)
 	begin
 		if(i_rstb='0') then
 			o_xx <= (others => '0');
 			o_yy <= (others => '0');
-			--r_xx <= (others => '0');
-			--r_yy <= (others => '0');
-			--r_xy <= (others => '0');
+			r_x <= (others => '0');
+			r_y <= (others => '0');
 		elsif(rising_edge(i_clk)) then
+			r_x <= signed(i_x);
+			r_y <= signed(i_y);
 			o_xx <= std_logic_vector(signed('0' & r_xx) - signed(r_yy));
-			o_yy <= std_logic_vector(r_xy & '0');
+			o_yy <= std_logic_vector((r_x * r_y) & '0');
 		end if;
 	end process p_mult;
 end rtl;
