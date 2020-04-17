@@ -35,7 +35,7 @@ component LPM_MULT
 end component;
 
 signal r_xx, r_yy, r_xy : std_logic_vector(63 downto 0);
-constant pipeline_value	: integer := 2;
+constant pipeline_value	: integer := 4;
 
 begin
 	
